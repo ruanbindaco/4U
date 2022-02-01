@@ -1,0 +1,57 @@
+body{
+  background-color: black;
+}
+
+.center{
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+#heart {
+position: relative;
+left: 130px;
+height: 130px;
+width:140px;
+}
+#heart:before, #heart:after {
+position: absolute;
+content: "";
+left: 70px;
+top: 0;
+width: 70px;
+height: 120px;
+background-color:rgb(196, 20, 20);
+/*border-radius*/
+-webkit-border-radius: 50px 50px 0 0;
+-moz-border-radius: 50px 50px 0 0;
+border-radius: 50px 50px 0 0;
+/*transform*/
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+/*transform-origin*/
+-webkit-transform-origin: 0 100%;
+-moz-transform-origin: 0 100%;
+-ms-transform-origin: 0 100%;
+-o-transform-origin: 0 100%;
+transform-origin: 0 100%;
+}
+
+#heart:after {
+left: 0;
+/*transform*/
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+/*transform-origin*/
+-webkit-transform-origin: 100% 100%;
+-moz-transform-origin: 100% 100%;
+-ms-transform-origin: 100% 100%;
+-o-transform-origin: 100% 100%;
+transform-origin: 100% 100%;
+}
